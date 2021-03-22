@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Tree Card</title>
+  <link rel="stylesheet" href="./css/hoverCardTree.css">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <!-- or -->
+  <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="box">
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://cutt.ly/exzzQLS" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Famous<br><span>Director</span></h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://cutt.ly/5xzWL0c" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Famous<br><span>Producer</span></h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://cutt.ly/4xzWe4B" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Famous<br><span>Actor</span></h2>
+      </div>
+    </div>
+
+    <button id="changeTheme" class="button"><i class='bx bxs-moon'></i></button>
+
+  </div>
+  <script>
+    const buttonTheme = document.getElementById("changeTheme");
+    console.log(buttonTheme);
+
+    buttonTheme.addEventListener('click', changeThemes);
+
+    function changeThemes() {
+      let element = document.body;
+      const change = element.classList.toggle("dark-mode");
+      if (change) {
+        buttonTheme.innerHTML = "<i class='bx bxs-sun' ></i>"
+      } else {
+        buttonTheme.innerHTML = "<i class='bx bxs-moon'></i>";
+      }
+    }
+  </script>
+</body>
+
+</html>
