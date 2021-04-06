@@ -62,8 +62,6 @@ body {
 @media (min-width: 960px) {
   .card-grid {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: var(--spacing-xxl);
-    row-gap: var(--spacing-xxl);
   }
 }
 
